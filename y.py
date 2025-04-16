@@ -9,7 +9,7 @@ import threading
 import time
 
 # Bot token and admin user ID (as strings)
-bot = telebot.TeleBot('8057943709:AAE67SK1JusQriR1XTdmo5zzE9HnkQunJF0')
+bot = telebot.TeleBot('8112431515:AAFv1RdsrnNIpDlddPboafpjGK5C6fKtYkQ')
 admin_id = {"6539807903"}
 
 # Files for data storage
@@ -208,8 +208,8 @@ def handle_bgmi(message):
         try:
             port = int(command[2])
             duration = int(command[3])
-            if duration > 240:
-                response = "⚠️ Error: Maximum attack duration is 240 seconds."
+            if duration > 80:
+                response = "⚠️ Error: Maximum attack duration is 80 seconds."
                 bot.reply_to(message, response)
                 return
 
